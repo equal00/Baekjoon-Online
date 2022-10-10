@@ -29,3 +29,70 @@ if((A % 4 == 0 and A % 100 != 0) or (A%100 == 0 and A % 400 == 0) or A % 400 == 
     print("1")
 elif((A % 4 != 0 and A % 100 == 0) or (A % 100 != 0 and A % 400 != 0) or A % 400 != 0):
     print("0")
+
+4. 사분면 고르기
+A = int(input())
+B = int(input())
+
+if(0<=A<=1000 and 0<=B<1000):
+    print("1")
+if(-1000<=A<0 and 0<=B<=1000):
+    print("2")
+if(-1000<A<=0 and -1000<B<0):
+    print("3")
+if(0<=A<=1000 and -1000<=B<=0):
+    print("4")
+    
+5. 알람시계
+A, B = map(int, input().split())
+
+c = int(45)
+
+if(B < 45):
+    if (A == 0):
+        A = 24
+    print(A-1,60+B-c)
+
+elif(B >= 45):
+    print(A,B-c)
+    
+6. 오븐 시계
+A,B = map(int, input().split())
+C = int(input())
+
+B = B % 60
+A = B // 60
+
+
+if(B+C < 60):
+    print(A , B+C)
+
+elif(120> B+C >= 60):
+    H = A + 1
+    if (H == 24):
+        H = 0
+    M = (B+C) - 60
+    print(H, M)
+
+elif(B+C >= 120):
+    H = A + 2
+    if (H == 24):
+        H = 0
+    M = (B+C) - 120
+    print(H, M)
+    
+7. 주사위 세 개
+A,B,C= map(int, input().split())
+
+if(A == B):
+    if( A==C ):
+        print(10000+A*1000)
+    else:
+        print(1000+A*100)
+
+elif(B == C):
+    print(1000+B*100) 
+elif(A == C):
+    print(1000+A*100)
+else:
+    print(100*max(A,B,C)) 
