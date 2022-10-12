@@ -24,3 +24,55 @@ for i in range(1, n+1, 1):
     answer += i
 
 print(answer) 
+
+4. 영수증
+X = int(input())
+N = int(input())
+
+answer = 0
+for i in range(0, N, 1):
+    C, D = map(int, input().split())
+    answer += C*D
+    
+if(answer == X):
+    print("Yes")
+else:
+    print("No")
+    
+5. 빠른 A+B
+import sys
+input = sys.stdin.readline 
+
+T = int(input())
+Save = []
+
+for _ in range(0, T, 1):
+    A = list(map(int, input().split()))
+    Save.append(A[0] + A[1])
+
+for i in Save:
+    print(i)
+    
+6. A+B -7
+T = int(input())
+
+for i in range(1, T+1, 1):
+    A, B = map(int, input().split())
+    print(f'Case #{i}: {A+B}')
+
+7. A+B -8
+T = int(input())
+
+for i in range(1, T+1, 1):
+    A, B = map(int, input().split())
+    print("Case #%d: %d + %d = %d" %(i, A, B, A+B))
+
+8. 별찍기-1
+N = int(input())
+
+for i in range(1, N+1, 1):
+    print(i*'*')
+
+
+
+
