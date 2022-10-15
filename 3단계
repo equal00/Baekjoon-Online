@@ -90,3 +90,18 @@ for i in range(0, N, 1):
  
 for j in range(0, len(array), 1):
     print(array[j], end = ' ')   
+    
+11. A + B -5
+import sys                        
+input = sys.stdin.readline            
+array = []
+
+while(True):                      
+    A = list(map(int, input().split()))
+    array.append(A[0]+A[1])           
+    if (A[0] == 0 and A[1] == 0):       
+        break                           
+array.pop()                           
+
+for i in array:
+    print(i)
