@@ -105,3 +105,14 @@ array.pop()
 
 for i in array:
     print(i)
+
+12. A+B -4
+import sys
+input = sys.stdin.readline       
+
+while True:          
+    try:                           
+        A = list(map(int, input().split()))
+        print(A[0]+A[1])
+    except:                        
+        break     
