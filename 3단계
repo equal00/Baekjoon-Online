@@ -116,3 +116,36 @@ while True:
         print(A[0]+A[1])
     except:                        
         break     
+        
+ 13. 더하기 사이클
+import sys
+input = sys.stdin.readline
+play = 0
+answer = 0
+
+A = str(input())   
+
+if (int(A) < 10):         
+    A_str = list(str(A))                
+    A_str.insert(0,0)      
+else:
+    A_str = list(str(A))
+
+while(True):                           
+    play = int(A_str[0]) + int(A_str[1]) 
+    Save = A_str[1]                   
+    if(play >= 10):                    
+        play -= 10
+        A_str = str(Save) + str(play)
+        answer += 1                     
+        if (int(A) == int(A_str)):
+            print(answer)
+            break
+
+    elif(play < 10):
+        A_str = str(Save) + str(play)
+        answer += 1
+        if (int(A) == int(A_str)):
+            print(answer)
+            break
+
