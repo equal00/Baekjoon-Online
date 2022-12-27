@@ -33,3 +33,17 @@ for i in range(0,10,1):
 
 
 print(len(list(set(array))))
+
+
+
+4. 평균
+A = int(input())
+B = list(map(int, input().split()))
+sum = 0
+K = 0
+
+for i in range(0,len(B),1):
+    K = (B[i] / max(B)) * 100
+    sum = sum + K
+
+print(sum / A)
