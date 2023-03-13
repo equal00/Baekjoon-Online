@@ -1,1 +1,5 @@
+1. 함수
+def solve(a):
+    ans = 0
+    return ans
 
