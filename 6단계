@@ -1,0 +1,4 @@
+1. 문자열
+
+asc = input()
+print(ord(asc))
