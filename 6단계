@@ -2,3 +2,16 @@
 
 asc = input()
 print(ord(asc))
+
+2. 숫자의 합
+import sys
+input = sys.stdin.readline
+
+A = int(input())
+B = input()
+C = 0
+
+for i in range(A):
+    C += int(B[i])
+
+print(C)
