@@ -96,3 +96,14 @@ elif(A == C):
     print(1000+A*100)
 else:
     print(100*max(A,B,C)) 
+
+8. 코딩은 체육과목 입니다.
+N = input()
+
+list = ''
+
+Num = int(N)//4
+for i in range(Num):
+    list += 'long '
+
+print(list + "int")
