@@ -35,3 +35,9 @@ for i in range(1,A+1):              #1~A까지 반복
         Han += 1                    #첫자리-둘째자리 == 둘째자리-셋째자리 일경우 한수
 
 print(Han)
+
+4. 문자와 문자열
+word = input()
+Num = int(input())
+
+print(word[Num-1])
