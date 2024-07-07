@@ -41,3 +41,8 @@ word = input()
 Num = int(input())
 
 print(word[Num-1])
+
+5. 문자 길이 출력
+string = input()
+
+print(len(string))
