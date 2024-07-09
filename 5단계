@@ -46,3 +46,15 @@ print(word[Num-1])
 string = input()
 
 print(len(string))
+
+6. 문자열
+Str_list = input()
+
+answer = Str_list.split(" ")
+Num = 0
+
+for i in answer:
+    if i != '':
+        Num += 1
+
+print(Num)
